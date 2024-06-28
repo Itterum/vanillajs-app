@@ -28,10 +28,14 @@ export const modals = () => {
         })
     }
 
+    const showModalByTime = (selector, time) => {
+        setTimeout(() => {
+            document.querySelector(selector).style.display = 'block'
+            document.body.style.overflow = 'hidden'
+        }, time)
+    }
+
     hadler('.popup_engineer_btn', '.popup_engineer', '.popup_close')
     hadler('.phone_link', '.popup', '.popup_close')
-
-    setTimeout(() => {
-        hadler('.phone_link', '.popup', '.popup_close')
-    }, 60000)
+    showModalByTime('.popup', 60000)
 }
