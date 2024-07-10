@@ -1,6 +1,1 @@
-import './slider'
-import { modals } from './modals'
-
-window.addEventListener('DOMContentLoaded', () => {
-    modals()
-})
+console.log('Hello, World!');
