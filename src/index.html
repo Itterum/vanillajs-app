@@ -6,8 +6,51 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<div class="container">
+    <div class="login-form">
+        <div class="title" data-i18n="login_title">
+            Log in to your Account
+        </div>
+        <div class="subtitle" data-i18n="welcome">
+            <span>welcome</span> back, please enter your details.
+        </div>
+        <button class="login-with-google" data-i18n="continue_with_google">Continue with Google</button>
+        <div class="separator"><span data-i18n="or">or</span></div>
+        <div class="form">
+            <label>
+                <span data-i18n="email_label">email address</span>
+                <input type="text" data-i18n-placeholder="email_placeholder" class="email">
+            </label>
+            <label>
+                <span data-i18n="password_label">password</span>
+                <input type="password" data-i18n-placeholder="password_placeholder"
+                       class="password">
+            </label>
+            <label class="remember-me">
+                <span>
+                    <input type="checkbox" class="remember-me">
+                    <span data-i18n="remember_me">remember me</span>
+                </span>
+                <a href="#"><span data-i18n="forgot_password">forgot password?</span></a>
+            </label>
+            <button class="login" data-i18n="login_button">Login</button>
+        </div>
+        <div class="create-account">
+            <span data-i18n="no_account">Don't have an account?</span>
+            <a href="#"><span data-i18n="sign_up">sign up</span></a>
+        </div>
+    </div>
+    <div class="lang-selector">
+        <span class="lang-button" onclick="setLanguage('en')">English</span>
+        <span class="lang-button" onclick="setLanguage('ru')">Русский</span>
+    </div>
+</div>
+
+<!--<div class="create-account-form"></div>-->
+
 <script src="./js/main.js"></script>
 </body>
 </html>
